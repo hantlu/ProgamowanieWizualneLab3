@@ -64,6 +64,7 @@
             this.usuwanie.TabIndex = 2;
             this.usuwanie.Text = "Usuń";
             this.usuwanie.UseVisualStyleBackColor = true;
+            this.usuwanie.Click += new System.EventHandler(this.usuwanie_Click);
             // 
             // odczytywanie
             // 
@@ -73,6 +74,7 @@
             this.odczytywanie.TabIndex = 3;
             this.odczytywanie.Text = "Odczyt z .csv";
             this.odczytywanie.UseVisualStyleBackColor = true;
+            this.odczytywanie.Click += new System.EventHandler(this.odczytywanie_Click);
             // 
             // zapisywanie
             // 
@@ -82,8 +84,9 @@
             this.zapisywanie.TabIndex = 4;
             this.zapisywanie.Text = "Zapis do .csv";
             this.zapisywanie.UseVisualStyleBackColor = true;
+            this.zapisywanie.Click += new System.EventHandler(this.zapisywanie_Click);
             // 
-            // Form1
+            // Pracownicy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -93,7 +96,7 @@
             this.Controls.Add(this.usuwanie);
             this.Controls.Add(this.dodawanie);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form1";
+            this.Name = "Pracownicy";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
